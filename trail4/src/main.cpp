@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-BloodTest bTestObj;
+BloodTest bloodTestObj;
 
 return 1;
 }

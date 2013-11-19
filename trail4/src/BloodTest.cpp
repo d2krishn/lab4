@@ -13,13 +13,13 @@ using namespace std;
 
 
 BloodTest::BloodTest() {
-	cout<<"enter first name of patient"<<endl;
+	cout<<"Enter first Name of patient"<<endl;
 	cin>>ptFName;
-	cout<<"enter last name of patient"<<endl;
+	cout<<"Enter last name of patient"<<endl;
 	cin>>ptLName;
-	cout<<"enter blood type"<<endl;
+	cout<<"Enter blood type"<<endl;
 	cin>>bldType;
-	cout<<"enter gender"<<endl;
+	cout<<"Enter gender"<<endl;
 	cin>>Gender;
 
 }

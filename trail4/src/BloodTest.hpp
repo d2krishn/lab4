@@ -50,6 +50,7 @@ class LipoLevels: public BloodTest{
 protected:
 	int totalChl;
 	int hdl;
+
 public:
 	LipoLevels ();
 void LipoResutls();
