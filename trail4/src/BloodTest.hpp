@@ -14,33 +14,45 @@ using namespace std;
 #define BLOODTEST_HPP_
 
 class BloodTest {
-private:
+protected:
 	string bldType;
-	string ptName;
+	string ptFName;
+	string ptLName;
+	string Gender;
 public:
 	BloodTest();
+	void ptComments(string, string);
 };
 
 class bldCount: public BloodTest{
-private:
+protected:
 	int RBC;
+	int WBC;
+	int PlCount;
+	int plasmaVolume;
+
+
 public:
-	void RBCount();
+	bldCount();
+	void BCount();
 };
 
 class bldGlucose: public BloodTest{
-private:
+protected:
 	int glucose;
 
 public:
+	bldGlucose();
 	void glucoseLevel();
 };
 
-class Lipoprotein: public BloodTest{
-private:
-
+class LipoLevels: public BloodTest{
+protected:
+	int totalChl;
+	int hdl;
 public:
-
+	LipoLevels ();
+void LipoResutls();
 };
 
 #endif /* BLOODTEST_HPP_ */
