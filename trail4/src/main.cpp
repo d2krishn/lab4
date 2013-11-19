@@ -8,7 +8,6 @@ int main()
 {
 BloodTest bTestObj;
 
-
 return 1;
 }
 }
