@@ -53,7 +53,7 @@ while(int loop=1){
             cout << "Enter Y/y to add an annotation to this report, or N/n to not add an annotation:" <<endl;
             cin >> addcomment;
             if (addcomment == 'Y' || addcomment == 'y'){
-                test3.annotation1();
+                test1.annotation1();
                 cout << "Please generate this test result before allowing doctor to add annotation." <<endl;
             }
             else if (addcomment == 'N' || addcomment =='n'){
