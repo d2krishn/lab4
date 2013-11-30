@@ -275,7 +275,7 @@ void uculture::uculturedisplay(){
    output1 << "Result\t\t\t\t"<<displayresult<<"\t\t"<<endl;
    output1 << "*********************************************************"<<endl;
    output1 <<"Patient Name:" <<patientname<<endl;
-   output1 << "Patient Bloodtype" << bloodtype <<endl;
+   output1 << "Patient Blood type" << bloodtype <<endl;
    output1 << "*********************************************************"<<endl;
 }
 

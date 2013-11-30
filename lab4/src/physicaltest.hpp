@@ -31,7 +31,7 @@ protected :
         float bodytemp;
         int pulserate;
         int resprate;
-        int bpressure;
+        //int bpressure;
         int systolic;
         int diastolic;
         string displaybodytemp,displaypulserate,displayresprate,displaybpressure;
