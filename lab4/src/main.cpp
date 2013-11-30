@@ -22,7 +22,7 @@ char addcomment;
 
 
 cout << "Patient chart system" <<endl;
-cout <<"*******************************" <<endl;
+cout <<"********************************" <<endl;
 cout << "Please enter the following patient information" <<endl;
 cout << "Please enter the patient's name:" <<endl;
 cin >> patientname;
