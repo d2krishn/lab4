@@ -21,8 +21,7 @@ protected:
 public:
     string patientname;
     string bloodtype;
-    char gender;
-physicalt();
+   physicalt();
 void annotation1();
 void docannotation();
 };

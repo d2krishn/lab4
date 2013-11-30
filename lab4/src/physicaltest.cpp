@@ -22,8 +22,6 @@ void physicalt::annotation1(){
     cout << "Patient Blood type:"<<endl;
     cin >> bloodtype;
 
-    cout << "Patient Gender" << endl;
-    cin >> gender;
 }
 
 void physicalt::docannotation(){
@@ -278,7 +276,6 @@ void uculture::uculturedisplay(){
    output1 << "*********************************************************"<<endl;
    output1 <<"Patient Name:" <<patientname<<endl;
    output1 << "Patient Bloodtype" << bloodtype <<endl;
-   output1 << "Patient Gender:" << gender <<endl;
    output1 << "*********************************************************"<<endl;
 }
 
@@ -298,7 +295,6 @@ void urinet::urinetdisplay(){
    output1 << "*********************************************************"<<endl;
    output1 <<"Patient name:" << patientname <<endl;
    output1 << "Patient bloodtype" << bloodtype <<endl;
-   output1 << "Patient gender" << gender <<endl;
    output1 << "*********************************************************"<<endl;
 
 }
@@ -315,7 +311,6 @@ void vsigns::vsignsdisplay(){
    output1 << "*********************************************************"<<endl;
    output1 <<"Patient name:" << patientname <<endl;
    output1 << "Patient bloodtype" << bloodtype <<endl;
-   output1 << "Patient gender" << gender <<endl;
    output1 << "*********************************************************"<<endl;
 }
 
