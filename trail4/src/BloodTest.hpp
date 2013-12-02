@@ -46,7 +46,7 @@ public:
 	bldGlucose();
 	void glucoseLevel();
 	//creates a glucose level class with blood test function
-	// tests for glucose level in patient
+	// tests for glucose level in patients
 };
 //creats a sub clas of lipids levels
 class LipoLevels: public BloodTest{

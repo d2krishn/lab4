@@ -80,7 +80,7 @@ case 1:
 
     }
 			 case 2:{
-                            cout<<"medical imiaging stuff here..."<<endl;
+                            cout<<"medical imiaging stuff here.."<<endl;
                 break;
                     }
 

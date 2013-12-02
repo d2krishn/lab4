@@ -33,7 +33,7 @@ void bldCount::BCount(){
 
 
 
-cout<<"Enter the number of WHITE blood cell counts in (cell/mcL) "<<endl;
+cout<<"Enter the number of WHITE BLOOD cell counts in (cell/mcL) "<<endl;
 cin>>WBC;//stores value of WBC and checks if its within normal range
 if (WBC>=4500 && WBC<=100000 )
     cout<<"The WBC count is NORMAL "<<endl;
