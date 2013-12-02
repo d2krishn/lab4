@@ -14,7 +14,7 @@
 #include <string>
 
 using namespace std;
-
+//creates base  class for physical tests.The common function is shared among other classes
 class physicalt{
 protected:
 
