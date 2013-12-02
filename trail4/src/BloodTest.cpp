@@ -28,13 +28,13 @@ bldCount::bldCount(){
 
 void bldCount::BCount(){
 
-     myfile.open ("bloodtest.txt", ofstream::app);
+     myfile.open ("bloodtest.txt", ofstream::app);//creats bloodtest file on text
 
 
 
 
 cout<<"Enter the number of WHITE blood cell counts in (cell/mcL) "<<endl;
-cin>>WBC;
+cin>>WBC;//stores value of WBC and checks if its within normal range
 if (WBC>=4500 && WBC<=100000 )
     cout<<"The WBC count is NORMAL "<<endl;
 else
@@ -43,7 +43,7 @@ else
 
 
 cout<<"Enter the number of platelets count in (cell/mcL) "<<endl;
-cin>>PlCount;
+cin>>PlCount;//stores value of plasma count and compares it to the normal range of plasma count
 if (PlCount>=140000 && PlCount<=450000 )
     cout<<"The platelets count is NORMAL "<<endl;
 else
@@ -52,7 +52,7 @@ else
 
 
 cout<<"Enter the plasama glucose volume in (mg/dL) "<<endl;
-cin>>plasmaVolume;
+cin>>plasmaVolume;//stores value of plasma glucose and advises if patient is diabetic or not
 if (plasmaVolume>=70 && plasmaVolume<=99 )
     cout<<"The diagnosis is NORMAL "<<endl;
 else if  (plasmaVolume>=100 && plasmaVolume<=125 )
@@ -66,13 +66,13 @@ cout<<"the diagnosis is diabetes"<<endl;
 
 
 cout<<"Enter gender, Please enter M/m for Male or F/f for female"<<endl;
-	cin>>Gender;
+	cin>>Gender;//patient is verified as being a male or female
 
 switch(Gender){
 
     case 'M': case'm':{
         cout<<"please enter total red blood count"<<endl;
-        cin>> RBC;
+        cin>> RBC;//stores value of red blood cells and compares it to normal ranges for either men or women depending on previus input
     if (RBC> 5000000 && RBC <= 6000000)
             cout<<"the blood level is normal for a men"<<endl;
     else
@@ -101,7 +101,7 @@ break;
 
  break;
 }
-
+//stores record of patient on file
 myfile<<"\n\nThe patietns total RBC is: "<< RBC<<endl;
 myfile << "The Patietns total WBC is: "<<WBC<<endl;
 myfile<<"The patietns total plama is: "<< PlCount<<endl;
@@ -114,7 +114,7 @@ myfile.close();
 bldGlucose::bldGlucose(){
 glucose = 0;
 }
-
+//
 void bldGlucose::glucoseLevel()
 {
      myfile.open ("bloodtest.txt", ofstream::app);
