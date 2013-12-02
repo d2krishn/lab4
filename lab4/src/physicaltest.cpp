@@ -120,7 +120,7 @@ displayresprate ="Condition : TACHYPNEA";
 urinet::urinet(){
    pH=0;
 }
-
+//Patient urine sample is tested here for the following substances
 void urinet::urinetresults(){
 
 cout << "Please enter the value of pH :" << endl;
@@ -239,7 +239,7 @@ cout << "Condition : Abnormal"<<endl;
 displaywbc = "Condition : ABNORMAL";
 }
 }
-
+//Urine culture.
 void uculture::ucultureresults(){
 
 cout << "Please enter the size:" << endl;
@@ -264,7 +264,7 @@ cout << "Condition : Abnormal" <<endl;
 displayresult = "Condition : ABNORMAL";
 }
 }
-
+//displays the urine culture patient information
 void uculture::uculturedisplay(){
 
    output1 << "****************URINE CULTURE TEST RESULTS***************"<<endl;
@@ -278,7 +278,7 @@ void uculture::uculturedisplay(){
    output1 << "Patient Blood type" << bloodtype <<endl;
    output1 << "*********************************************************"<<endl;
 }
-
+//Displays the urine test results
 void urinet::urinetdisplay(){
 
    output1 << "****************URINE TEST RESULTS***************"<<endl;
@@ -298,7 +298,7 @@ void urinet::urinetdisplay(){
    output1 << "*********************************************************"<<endl;
 
 }
-
+// displays the patients vital signs information
 void vsigns::vsignsdisplay(){
    output1 << "****************VITAL SIGNS RESULTS***************"<<endl;
    output1 << "Vital Signs Component\t\tValue\t\tCondition" <<endl;
