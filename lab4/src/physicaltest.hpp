@@ -40,8 +40,8 @@ public:
         vsigns();
         void vsignstest();
         void vsignsdisplay();
-};
-
+};//Test for vital signs . The output is displayed
+// This class is created for urine tests. physicalt class is also included
 class urinet:public physicalt{
 protected :
     float pH;
