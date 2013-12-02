@@ -298,7 +298,7 @@ void urinet::urinetdisplay(){
    output1 << "*********************************************************"<<endl;
 
 }
-// displays the patients vital signs information
+// displays the patients vital signs information from the tests
 void vsigns::vsignsdisplay(){
    output1 << "****************VITAL SIGNS RESULTS***************"<<endl;
    output1 << "Vital Signs Component\t\tValue\t\tCondition" <<endl;
