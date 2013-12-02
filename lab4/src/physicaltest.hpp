@@ -25,7 +25,7 @@ public:
 void annotation1();
 void docannotation();
 };
-
+// vital signs class is created. The physicalt class is also included
 class vsigns:public physicalt{
 protected :
         float bodytemp;
