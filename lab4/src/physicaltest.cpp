@@ -10,11 +10,11 @@
 #include "physicaltest.hpp"
 #include <fstream>
 using namespace std;
-
+//This command copies the values from output 1 into a text file
 std::ofstream output1("Preport.txt", std::ios_base::out|ios::app);
 physicalt::physicalt(){
 }
-
+//Comments that are made by the nurse or other medical professionals
 void physicalt::annotation1(){
     cout << "Patient name:" << endl;
     cin >> patientname;
@@ -23,7 +23,7 @@ void physicalt::annotation1(){
     cin >> bloodtype;
 
 }
-
+//Comments that are only made by the doctor
 void physicalt::docannotation(){
     string doc;
     string doccomment;
@@ -42,7 +42,7 @@ vsigns::vsigns(){
     diastolic = 0;
     resprate = 0;
 }
-
+//Vital signs is checked here using the following conditions such as body temperature, pulse rate and respiration rate
 void vsigns::vsignstest(){
 cout << "Please enter the pulse rate:" << endl;
 cin >> pulserate;
