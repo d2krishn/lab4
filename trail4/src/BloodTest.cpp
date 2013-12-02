@@ -12,12 +12,12 @@
 #include <fstream>
 using namespace std;
 ofstream myfile;
-
+//constructor class for bloodtest
 BloodTest::BloodTest() {
 
 }
 
-
+//initates variables used in class
 bldCount::bldCount(){
 	RBC = 0;
 	WBC = 0;
@@ -28,7 +28,7 @@ bldCount::bldCount(){
 
 void bldCount::BCount(){
 
-     myfile.open ("bloodtest.txt", ofstream::app);//creats bloodtest file on text
+     myfile.open ("bloodtest.txt", ofstream::app);//opens bloodtest .txt  file on text for appending
 
 
 
@@ -51,12 +51,12 @@ else
 
 
 
-cout<<"Enter the plasama glucose volume in (mg/dL) "<<endl;
+cout<<"Enter the plasma glucose volume in (mg/dL) "<<endl;
 cin>>plasmaVolume;//stores value of plasma glucose and advises if patient is diabetic or not
 if (plasmaVolume>=70 && plasmaVolume<=99 )
     cout<<"The diagnosis is NORMAL "<<endl;
 else if  (plasmaVolume>=100 && plasmaVolume<=125 )
-    cout<<"The diagnosis is prediabetic"<<endl;
+    cout<<"The diagnosis is pre-diabetic"<<endl;
 else
 cout<<"the diagnosis is diabetes"<<endl;
 
@@ -71,21 +71,21 @@ cout<<"Enter gender, Please enter M/m for Male or F/f for female"<<endl;
 switch(Gender){
 
     case 'M': case'm':{
-        cout<<"please enter total red blood count"<<endl;
+        cout<<"Please enter total red blood count"<<endl;
         cin>> RBC;//stores value of red blood cells and compares it to normal ranges for either men or women depending on previus input
     if (RBC> 5000000 && RBC <= 6000000)
             cout<<"the blood level is normal for a men"<<endl;
     else
-    cout<<"the count is out of normal range for a men"<<endl;
+    cout<<"The count is out of normal range for a men"<<endl;
 break;}
     case 'F': case 'f':{
-        cout<<"please enter total red blood count"<<endl;
+        cout<<"Please enter total red blood count"<<endl;
         cin>> RBC;
     if( RBC>= 4000000 && RBC <= 5000000)
 
-    cout<<"the blood level is normal for a female"<<endl;
+    cout<<"The blood level is normal for a female"<<endl;
     else
-    cout<<"the count is out of normal range for a female"<<endl;
+    cout<<"The count is out of normal range for a female"<<endl;
 break;
     }
     default:
@@ -101,11 +101,11 @@ break;
 
  break;
 }
-//stores record of patient on file
-myfile<<"\n\nThe patietns total RBC is: "<< RBC<<endl;
-myfile << "The Patietns total WBC is: "<<WBC<<endl;
-myfile<<"The patietns total plama is: "<< PlCount<<endl;
-myfile << "The Patietns plasma VOlume HDL is: "<<plasmaVolume<<endl;
+//stores record of patient on .txt  file and displays it on output display
+myfile<<"\n\nThe patients total RBC is: "<< RBC<<endl;
+myfile << "The patients total WBC is: "<<WBC<<endl;
+myfile<<"The patients total plasma is: "<< PlCount<<endl;
+myfile << "The patients plasma Volume is: "<<plasmaVolume<<endl;
 myfile.close();
 
 }
@@ -117,11 +117,11 @@ glucose = 0;
 //
 void bldGlucose::glucoseLevel()
 {
-     myfile.open ("bloodtest.txt", ofstream::app);
+     myfile.open ("bloodtest.txt", ofstream::app);//add opens .txt  file for appending
 
-    cout<<"please enter glucose level"<<endl;
+    cout<<"please enter glucose level"<<endl; //stores value of glucose in variable glucose
     cin >>glucose;
-
+//compares the glucose levels with normal range and diagnosis as normal or diabetic
         if (glucose >= 70 && glucose <= 99)
         cout<<"glucose level is NORMAL"<<endl;
 
@@ -133,11 +133,11 @@ void bldGlucose::glucoseLevel()
             cout<<"inaccurate value"<<endl;
 
 
-myfile<<"\n\nThe patietns glucose is: "<< glucose<<endl;
+myfile<<"\n\nThe patietns glucose is: "<< glucose<<endl; //stores the output on to file  and displays on to terminal
 myfile.close();
 
 }
-
+//lipolevel class has function for lipid cholestrol and HDL and initaites the variables
 LipoLevels::LipoLevels(){
 totalChl = 0;
 hdl=0;
@@ -145,24 +145,24 @@ hdl=0;
 
 void LipoLevels::LipoResutls(){
 
-myfile.open ("bloodtest.txt", ofstream::app);
+myfile.open ("bloodtest.txt", ofstream::app);// opens file for  appending
 
 
-cout<<"please enter total cholestrol of pateint in mg/dl"<<endl;
-cin>>totalChl;
-
+cout<<"please enter total cholesterol of patient in mg/dl"<<endl;
+cin>>totalChl; //stores value of total cholesterol
+//compares value of totalChl and gives diagnosis of the patient
 if (totalChl< 200)
-    cout<<" the total chl. is DESIREABLE"<<endl;
+    cout<<" the Total chl. is DESIREABLE"<<endl;
 else if (totalChl>= 200 && totalChl<= 239)
-    cout<<"the total chl is BORDERLINE HIGH"<<endl;
+    cout<<"The total chl is BORDERLINE HIGH"<<endl;
 else if (totalChl > 240)
-    cout<<"the total chl is HIGH"<<endl;
+    cout<<"The total chl is HIGH"<<endl;
 else
     cout<<"inaccurate value"<<endl;
 
-cout<<"please enter total HDL cholestrol of the patient in mg/dl"<<endl;
-cin>>hdl;
-
+cout<<"please enter total HDL cholesterol of the patient in mg/dl"<<endl;
+cin>>hdl; //stores value of HDL in the variable hdl
+//compares value of hdl to see if its normal and compares to
 if (hdl< 40)
     cout<<" the total HDL is MAJOR RISK"<<endl;
 else if (hdl>= 40 && hdl<= 59)
@@ -173,17 +173,18 @@ else
     cout<<"inaccurate value"<<endl;
 
 
-myfile<<"\n\nThe patients total cholestrol is: "<< totalChl<<endl;
-myfile << "The Patients total HDL is: "<<hdl<<endl;
+myfile<<"\n\nThe patients total cholestrol is: "<< totalChl<<endl;//
+myfile << "The Patients total HDL is: "<<hdl<<endl;/
+//stores value into results file and displays in terminal when asked
 
 myfile.close();
 }
-
+//creates class for displaying the file in the terminal .txt
 TextFile::TextFile(){
 
 };
 
-void TextFile::TextOutput(){
+void TextFile::TextOutput(){ //opens the bloodtest file and reads and outputs the content of the file on to the display
 cout<<" ----REPORT----"<<endl;
 string line;
   ifstream myfile ("bloodtest.txt");
@@ -193,7 +194,7 @@ string line;
     {
       cout << line << endl;
     }
-    myfile.close();
+    myfile.close(); //closes .txt file
   }
 
   else cout << "Unable to open file"<<endl;
@@ -204,7 +205,7 @@ myfile.close();
 };
 
 
-
+//class for making annotation and string Ant is initialized
 Annotate::Annotate(){
 string Ant;
 
@@ -212,20 +213,13 @@ string Ant;
 
 
 void Annotate::Annotating(){
-	myfile.open ("bloodtest.txt", ofstream::app);
+	myfile.open ("bloodtest.txt", ofstream::app); //opens .txt ile for appending
 cout<<"please input annotaiton followed by Enter key:"<<endl;
 cin>>Ant;
+//stores annotation and displays in the .txt file
 
-
-myfile << "The annotation was: "<<Ant<<endl;
-    myfile.close();
+myfile << "The annotation was: "<<Ant<<endl;//calls annotaiton from text file
+    myfile.close();//closes txt file
 
 };
-/*void BloodTest::ptComments(string docName, string annotation)
-{
-cout<<"Enter name of doctor/nurse"<<endl;
-cin>>docName;
-cout<<"Enter notes regarding pt"<<endl;
-cin>>annotation;
-};
-*/
+
