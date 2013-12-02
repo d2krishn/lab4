@@ -38,9 +38,9 @@ protected :
 
 public:
         vsigns();
-        void vsignstest();
-        void vsignsdisplay();
-};//Test for vital signs . The output is displayed
+        void vsignstest();//Test for vital signs .
+        void vsignsdisplay();// The output is displayed
+};
 // This class is created for urine tests. physicalt class is also included
 class urinet:public physicalt{
 protected :
@@ -56,8 +56,8 @@ string wbc;
 string displaypH,displayprotein,displaysugar,displaynitrite,displayketone,displaybillirubin,displayurobillinogen,displayrbc,displaywbc;
 public:
         urinet();
-        void urinetresults();
-        void urinetdisplay();
+        void urinetresults();//urine test results
+        void urinetdisplay();//The urine test results are displayed
 };
 
 class uculture:public physicalt{
