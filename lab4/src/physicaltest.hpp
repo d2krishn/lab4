@@ -59,7 +59,7 @@ public:
         void urinetresults();//urine test results
         void urinetdisplay();//The urine test results are displayed
 };
-
+// This class is created for urine culture analysis . the class physicalt is also included
 class uculture:public physicalt{
 protected:
 string size;
@@ -69,8 +69,8 @@ string result;
 string displayresult;
 
 public:
-void ucultureresults();
-void uculturedisplay();
+void ucultureresults();//The results from urine culture analysis
+void uculturedisplay();//The results from urine culture analysis are displayed
 };
 
 
